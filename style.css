@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Meta pro';
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav .nav {
+    max-width: 100%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0px 170px;
+}
+
+.nav .logo img {
+    cursor: pointer;
+}
+
+.list ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.list ul li {
+    list-style: none;
+    font-family: 'Meta pro';
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search {
+    position: relative;
+    width: 250px;
+}
+
+.search i.material-icons {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: black;
+}
+
+.search input {
+    width: 35%;
+    padding: 10px 0px 10px 40px;
+    border-radius: 5px;
+    border: 0.5px solid #808080b2;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+main .main .first {
+    background-image: url(https://www.hermanmiller.com/content/dam/hmicom/page_assets/home/masthead/mh_home_bay_work_pod_20250108.jpg.rendition.1920.1920.jpg);
+    width: 100%;
+    height: 85vh;
+    display: flex;
+}
+
+.first .first-img {
+    max-width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 170px;
+    gap: 10px;
+}
+
+.first-img> :nth-child(1) {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.first-img> :nth-child(2) {
+    font-size: 27px;
+}
+
+.first-img> :nth-child(3) {
+    transition: all 0.1s;
+    padding: 12px 35px;
+    background-color: #252525;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.first-img> :nth-child(3):hover {
+    background-color: #464646;
+}
+
+main .second {
+    padding: 70px 0px;
+    background-color: #f6f6f6;
+}
+
+.side-scroll {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.side-scroll .scroll-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 450px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.scroll-item> :nth-child(1) {
+    width: 100%;
+    transition: transform 3s ease;
+}
+
+.scroll-item> :nth-child(1) img {
+    width: 100%;
+}
+
+.scroll-item> :nth-child(1):hover {
+    transform: scale(1.05555);
+}
+
+.scroll-item> :nth-child(2) {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.scroll-item> :nth-child(2) svg {
+    vertical-align: middle;
+}
+
+.scroll-item> :nth-child(3) {
+    font-size: 16px;
+}
+
+.red-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12px;
+    background-color: #e22d00;
+    cursor: pointer;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.red-line:hover {
+    background-color: #a81910;
+}
+
+.third {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 120px auto;
+}
+
+.third .para {
+    max-width: 940px;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    color: #201f1f;
+    padding-bottom: 60px;
+    letter-spacing: -1px;
+    line-height: 72px;
+}
+
+.third .small-line {
+    background-color: #ccc;
+    width: 250px;
+    height: 2px;
+}
+
+main .fourth {
+    background-color: #1f2532;
+}
+
+.fourth .first-part {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px 20px 0px;
+}
+
+.first-part> :nth-child(1) {
+    max-width: 860px;
+    font-size: 60px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+.first-part> :nth-child(2) {
+    font-size: 27px;
+    color: white;
+    padding: 15px 0px;
+}
+
+.fourth .second-part {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.second-part .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 500px;
+    cursor: pointer;
+}
+
+.container .img-1 img {
+    width: 100%;
+}
+
+.container> :nth-child(2) {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.container> :nth-child(3) {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+main .fifth {
+    background-color: #dbdbdb;
+}
+
+.fifth .part-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+    gap: 10px;
+}
+
+.fifth .part-1> :nth-child(1) {
+    font-size: 60px;
+    font-weight: 700;
+    color: #252525;
+}
+
+.fifth .part-1> :nth-child(2) {
+    font-size: 27px;
+    color: #252525;
+}
+
+.fifth .part-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 120px;
+}
+
+.part-2 .img-text {
+    position: relative;
+}
+
+.part-2 .img-text> :nth-child(1) {
+    position: relative;
+}
+
+.part-2 .img-text> :nth-child(2) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    bottom: 50px;
+}
+
+.part-2 .img-text .text-black {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: 700;
+    color: #252525;
+    bottom: 50px;
+    white-space: nowrap;
+}
+
+main .sixth {
+    background-image: url("https://www.hermanmiller.com/content/dam/hmicom/page_assets/home/ultrawidth/uw_home_home_office_20210513.jpg.rendition.1920.1920.jpg");
+    width: 100%;
+    height: 85vh;
+    display: flex;
+}
+
+.sixth .sixth-img {
+    max-width: 23vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 170px;
+    gap: 10px;
+    padding-bottom: 200px;
+}
+
+.sixth-img> :nth-child(1) {
+    font-size: 60px;
+    font-weight: 700;
+    color: #252525;
+}
+
+.sixth-img> :nth-child(2) {
+    font-size: 27px;
+}
+
+.sixth-img> :nth-child(3) {
+    transition: all 0.1s;
+    padding: 12px 35px;
+    background-color: #252525;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.sixth-img> :nth-child(3):hover {
+    background-color: #464646;
+}
+
+main .seventh {
+    background-color: #ebebeb;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 120px 250px 250px 250px 250px 250px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 140px;
+}
+
+
+.grid .grid-item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.grid-item .heading {
+    font-weight: 700;
+    color: #252525;
+}
+
+.grid-item .special {
+    padding-top: 10px;
+}
+
+.grid-item a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #484848;
+}
+
+.grid-item .button button {
+    background-color: transparent;
+    border: 1px solid #090807;
+    border-radius: 5px;
+    padding: 10px 55px;
+    margin: 5px 0px;
+    transition: background-color .1s, border-color .1s;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 9px;
+    cursor: pointer;
+}
+
+.grid-item .button button:hover {
+    color: #fff;
+    background-color: #464646;
+    border: 1px solid #464646;
+}
+
+.grid-item .icons img {
+    width: 18px;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+footer .footer {
+    background-color: #ebebeb;
+}
+
+.footer .country {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 200px;
+}
+
+
+.country span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #616161;
+    padding-left: 10px;
+}
+
+.footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright span {
+    font-size: 14px;
+    color: #3a3a3a;
+}
+
+.footer .footer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 25px;
+}
+
+.footer .footer-list a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #484848;
+    font-weight: 700;
+}
+
+footer .end {
+    background-color: #c2c2c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+footer .end span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #202020;
+}
