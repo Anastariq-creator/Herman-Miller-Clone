@@ -6,6 +6,7 @@
 }
 
 
+
 nav {
     position: sticky;
     top: 0;
@@ -33,6 +34,10 @@ nav .nav {
 .nav .logo .logo-icon {
     display: none;
     cursor: pointer;
+}
+
+nav .menu {
+    display: none;
 }
 
 .list ul {
@@ -828,5 +833,434 @@ footer .end span {
     .grid-item .icons img {
         width: 18px;
         padding: 0px 13px;
+    }
+}
+
+
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+    nav .nav {
+        padding-left: 100px;
+        padding-right: 0px;
+        gap: 15px;
+    }
+
+    .nav .logo .logo-full {
+        display: none;
+    }
+
+    .nav .logo .logo-icon {
+        display: block;
+        width: 65px;
+        height: auto;
+    }
+
+    .list ul {
+        padding-left: 20px;
+        white-space: nowrap;
+        margin-right: 0px;
+    }
+
+    .list ul li {
+        font-size: 18px;
+    }
+
+    .search {
+        position: relative;
+        width: 200px;
+    }
+
+    .search i.material-icons {
+        font-size: 35px;
+        padding-left: 30px;
+        cursor: pointer;
+    }
+
+    .search input {
+        display: none;
+    }
+
+    main .main .first {
+        height: 56vh;
+        background-repeat: no-repeat;
+        background-size: max(1000px, 100vw);
+        background-position: center center;
+    }
+
+    .first .first-img {
+        margin-left: 75px;
+    }
+
+    .first-img> :nth-child(1) {
+        font-size: 40px;
+        letter-spacing: -1px;
+    }
+
+    .first-img> :nth-child(2) {
+        font-size: 20px;
+    }
+
+    .first-img> :nth-child(3) {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    .side-scroll {
+        gap: 20px;
+    }
+
+    .side-scroll .scroll-item {
+        gap: 10px;
+        width: 230px;
+    }
+
+    .scroll-item> :nth-child(1) {
+        width: 100%;
+        transition: transform 3s ease;
+    }
+
+    .scroll-item> :nth-child(2) {
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+
+    .scroll-item> :nth-child(2) svg {
+        vertical-align: middle;
+        width: 20px;
+    }
+
+    .scroll-item> :nth-child(3) {
+        font-size: 13px;
+    }
+
+    .third {
+        margin: 100px 0px;
+    }
+
+    .third .para {
+        max-width: 680px;
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .first-part> :nth-child(1) {
+        font-size: 46px;
+    }
+
+    .first-part> :nth-child(2) {
+        font-size: 24px;
+    }
+
+    .second-part .container {
+        width: 300px;
+    }
+
+    .fifth .part-1 {
+        padding: 80px 0px;
+    }
+
+    .fifth .part-1> :nth-child(1) {
+        font-size: 45px;
+    }
+
+    .fifth .part-1> :nth-child(2) {
+        font-size: 24px;
+    }
+
+    .fifth .part-2 {
+        padding-bottom: 80px;
+    }
+
+    .part-2 .img-text> :nth-child(1) {
+        position: relative;
+        width: 205px;
+    }
+
+    .part-2 .img-text> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    main .sixth {
+        height: 57vh;
+        background-repeat: no-repeat;
+        background-size: max(1000px, 100vw);
+    }
+
+    .sixth .sixth-img {
+        padding-bottom: 25px;
+        margin-left: 100px;
+    }
+
+    .sixth-img> :nth-child(1) {
+        font-size: 40px;
+    }
+
+    .sixth-img> :nth-child(2) {
+        font-size: 20px;
+    }
+
+    .sixth-img> :nth-child(3) {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 80px 150px 200px 180px 180px 180px;
+        padding-right: 0px;
+    }
+
+    .grid-item .heading {
+        white-space: nowrap;
+    }
+
+    .grid-item .button button {
+        padding: 10px 50px;
+    }
+
+    .grid-item .icons img {
+        width: 16px;
+        padding: 0px 11px;
+    }
+}
+
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    nav .nav {
+        padding-left: 0px;
+        padding-right: 0px;
+        gap: 15px;
+    }
+
+    .nav .logo .logo-full {
+        display: inline-block;
+        width: 200px;
+        padding-left: 170px;
+        vertical-align: middle;
+    }
+
+    .nav .logo .logo-icon {
+        display: none;
+        width: 65px;
+        height: auto;
+    }
+
+    .nav .menu {
+        display: block;
+    }
+
+    .nav .menu svg {
+        width: 75px;
+        height: 40px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+
+    .list ul {
+        padding-left: 20px;
+        white-space: nowrap;
+        margin-right: 0px;
+        display: none;
+    }
+
+    .list ul li {
+        font-size: 18px;
+    }
+
+    .search {
+        position: relative;
+        width: 200px;
+    }
+
+    .search i.material-icons {
+        font-size: 35px;
+        padding-left: 125px;
+        cursor: pointer;
+    }
+
+    .search input {
+        display: none;
+    }
+
+    main .main .first {
+        height: 387px;
+        background-repeat: no-repeat;
+        background-size: max(900px, 100vw);
+        background-position: center center;
+    }
+
+    .first .first-img {
+        margin-left: 20px;
+    }
+
+    .first-img> :nth-child(1) {
+        font-size: 30px;
+        letter-spacing: -1px;
+    }
+
+    .first-img> :nth-child(2) {
+        font-size: 17px;
+    }
+
+    .first-img> :nth-child(3) {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .side-scroll {
+        gap: 20px;
+    }
+
+    .side-scroll .scroll-item {
+        gap: 10px;
+        width: 180px;
+    }
+
+    .scroll-item> :nth-child(1) {
+        width: 100%;
+        transition: transform 3s ease;
+    }
+
+    .scroll-item> :nth-child(2) {
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+
+    .scroll-item> :nth-child(2) svg {
+        vertical-align: middle;
+        width: 20px;
+    }
+
+    .scroll-item> :nth-child(3) {
+        font-size: 13px;
+    }
+
+    .third {
+        margin: 75px 0px;
+    }
+
+    .third .para {
+        max-width: 590px;
+        font-size: 35px;
+        line-height: 55px;
+    }
+
+    .first-part> :nth-child(1) {
+        font-size: 43px;
+    }
+
+    .first-part> :nth-child(2) {
+        font-size: 22px;
+    }
+
+    .second-part .container {
+        width: 240px;
+    }
+
+    .fifth .part-1 {
+        padding: 80px 0px;
+    }
+
+    .fifth .part-1> :nth-child(1) {
+        font-size: 43px;
+    }
+
+    .fifth .part-1> :nth-child(2) {
+        font-size: 22px;
+    }
+
+    .fifth .part-2 {
+        padding-bottom: 80px;
+        gap: 35px;
+    }
+
+    .part-2 .img-text> :nth-child(1) {
+        position: relative;
+        width: 170px;
+    }
+
+    .part-2 .img-text> :nth-child(2) {
+        font-size: 15px;
+    }
+
+    main .sixth {
+        height: 387px;
+        background-repeat: no-repeat;
+        background-size: max(900px, 100vw);
+    }
+
+    .sixth .sixth-img {
+        padding-bottom: 25px;
+        margin-left: 50px;
+    }
+
+    .sixth-img> :nth-child(1) {
+        font-size: 30px;
+    }
+
+    .sixth-img> :nth-child(2) {
+        font-size: 17px;
+    }
+
+    .sixth-img> :nth-child(3) {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1px 150px 150px 150px 150px 150px;
+        padding-right: 0px;
+    }
+
+    .grid-item .small-logo img {
+        display: none;
+    }
+
+    .grid-item .heading {
+        white-space: nowrap;
+        font-size: 14px;
+    }
+
+    .grid-item a {
+        font-size: 13px;
+    }
+
+    .grid-item .button button {
+        padding: 10px 37px;
+        font-size: 11px;
+    }
+
+    .grid-item .icons img {
+        width: 17px;
+        padding: 0px 8px;
+    }
+
+    .footer .country {
+        padding: 0px 40px;
+    }
+
+    .footer .country img {
+        width: 15px;
+    }
+
+    .country span {
+        font-size: 12px;
+
+    }
+
+    .copyright span {
+        font-size: 13px;
+        
+    }
+
+    .footer .footer-list a {
+        font-size: 13px;
+    }
+
+    footer .end span {
+        font-size: 12px;
     }
 }
